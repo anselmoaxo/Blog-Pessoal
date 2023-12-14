@@ -38,6 +38,9 @@ class Category(models.Model):
             self.slug = slugfy_new(self.name)
         super().save(*args, **kwargs)
         
+    def __str__(self):
+        return self.name
+        
         
 class Page(models.Model):
     class Meta:
@@ -56,6 +59,9 @@ class Page(models.Model):
         if not self.slug:
             self.slug = slugfy_new(self.title)
         super().save(*args, **kwargs)
+        
+    def __str__(self):
+        return self.name
         
         
 
