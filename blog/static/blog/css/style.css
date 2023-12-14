@@ -403,9 +403,9 @@ html,
 }
 
 .card {
-  border: 1px solid hsl(var(--clr-gray-ltst));
+  border: 2px solid hsl(var(--clr-gray-ltst));
   border-radius: var(--br-base);
-  box-shadow: 0 5px 5px hsl(var(--clr-black) / 0.1);
+  box-shadow: 0 15px 5px hsl(var(--clr-black) / 0.1);
   transition: scale 300ms ease-in-out, box-shadow 300ms ease-in-out;
 }
 
